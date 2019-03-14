@@ -5,6 +5,8 @@ export default class Firstchaincode extends Chaincode {
     async initLedger(stubHelper: StubHelper, args: string[]) {
         let cars = [];
         cars.push(new Car("1", 'black', "Honda", "Civic"));
+        cars.push(new Car("2", 'blue', "Toyota", "Prius"));
+        cars.push(new Car("3", 'red', "Suzuki", "Ciaz"));
 
         for (let i = 0; i < cars.length; i++) {
             const car: Car = cars[i];
